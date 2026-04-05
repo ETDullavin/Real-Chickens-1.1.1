@@ -1,5 +1,5 @@
 {
-    "format_version": "1.21.100",
+    "format_version": "1.26.0",
     "minecraft:block": {
         "description": {
             "identifier": "real_chickens:unfertilized_brown_egg",
@@ -38,6 +38,9 @@
                     7,
                     6
                 ]
+            },
+            "minecraft:connection_rule": {
+                "accepts_connections_from": "none"
             },
             "minecraft:destructible_by_mining": {
                 "seconds_to_destroy": 0

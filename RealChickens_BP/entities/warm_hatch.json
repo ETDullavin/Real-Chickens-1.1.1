@@ -44,6 +44,20 @@
             }
         },
         "components": {
+            "minecraft:breathable": {
+                "total_supply": 15,
+                "suffocate_time": -1,
+                "breathe_blocks": [],
+                "generates_bubbles": false
+            },
+            "minecraft:knockback_resistance": {
+                "value": 1.0
+            },
+            "minecraft:physics": {
+                "has_gravity": true,
+                "has_collision": true,
+                "push_reaction": "ignore"
+            },
             "minecraft:is_hidden_when_invisible": {},
             "minecraft:collision_box": {
                 "width": 0.25,
