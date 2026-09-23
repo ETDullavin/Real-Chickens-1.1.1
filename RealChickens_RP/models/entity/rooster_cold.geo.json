@@ -75,7 +75,7 @@
 				},
 				{
 					"name": "leg0",
-					"pivot": [-2, 5, 1]
+					"pivot": [-1, 5, 1]
 				},
 				{
 					"name": "adult2",
@@ -87,7 +87,7 @@
 				},
 				{
 					"name": "leg1",
-					"pivot": [1.5, 10, 0.5]
+					"pivot": [1, 5, 1]
 				},
 				{
 					"name": "adult3",

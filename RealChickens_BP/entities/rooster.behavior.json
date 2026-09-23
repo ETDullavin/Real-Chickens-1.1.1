@@ -654,24 +654,8 @@
 				"sequence": [
 					{
 						"filters": {
-							"any_of": [
-								{
-									"test": "has_biome_tag",
-									"value": "taiga"
-								},
-								{
-									"test": "has_biome_tag",
-									"value": "cold"
-								},
-								{
-									"test": "has_biome_tag",
-									"value": "snowy"
-								},
-								{
-									"test": "has_biome_tag",
-									"value": "extreme_hills"
-								}
-							]
+							"test": "has_biome_tag",
+							"value": "spawns_cold_variant_farm_animals"
 						},
 						"add": {
 							"component_groups": [
@@ -681,20 +665,8 @@
 					},
 					{
 						"filters": {
-							"any_of": [
-								{
-									"test": "has_biome_tag",
-									"value": "savanna"
-								},
-								{
-									"test": "has_biome_tag",
-									"value": "jungle"
-								},
-								{
-									"test": "has_biome_tag",
-									"value": "mesa"
-								}
-							]
+							"test": "has_biome_tag",
+							"value": "spawns_warm_variant_farm_animals"
 						},
 						"add": {
 							"component_groups": [
@@ -707,31 +679,11 @@
 							"none_of": [
 								{
 									"test": "has_biome_tag",
-									"value": "taiga"
+									"value": "spawns_cold_variant_farm_animals"
 								},
 								{
 									"test": "has_biome_tag",
-									"value": "cold"
-								},
-								{
-									"test": "has_biome_tag",
-									"value": "snowy"
-								},
-								{
-									"test": "has_biome_tag",
-									"value": "extreme_hills"
-								},
-								{
-									"test": "has_biome_tag",
-									"value": "savanna"
-								},
-								{
-									"test": "has_biome_tag",
-									"value": "jungle"
-								},
-								{
-									"test": "has_biome_tag",
-									"value": "mesa"
+									"value": "spawns_warm_variant_farm_animals"
 								}
 							]
 						},

@@ -69,7 +69,7 @@
 				},
 				{
 					"name": "leg0",
-					"pivot": [-2, 5, 1]
+					"pivot": [-1, 5, 1]
 				},
 				{
 					"name": "adult2",
@@ -93,7 +93,7 @@
 				},
 				{
 					"name": "wing0",
-					"pivot": [0, 4, 0]
+					"pivot": [-3, 11, 0]
 				},
 				{
 					"name": "adult4",
@@ -105,7 +105,7 @@
 				},
 				{
 					"name": "wing1",
-					"pivot": [5, 11, 0]
+					"pivot": [3, 11, 0]
 				},
 				{
 					"name": "adult5",
