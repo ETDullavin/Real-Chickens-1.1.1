@@ -6,23 +6,28 @@
 			"min_engine_version": "1.12.0",
 			"materials": {
 				"default": "entity_alphatest",
-				"legs": "chicken_legs"
+				"legs": "chicken_legs",
+				"cold": "entity_alphatest"
 			},
 			"textures": {
 				"default": "textures/entity/rooster",
 				"warm": "textures/entity/rooster_warm",
-				"cold": "textures/entity/rooster_cold"
+				"cold": "textures/entity/rooster_cold",
+				"baby_default": "textures/entity/rooster_temperate_baby",
+				"baby_warm": "textures/entity/rooster_warm_baby",
+				"baby_cold": "textures/entity/rooster_cold_baby"
 			},
 			"geometry": {
 				"default": "geometry.rooster",
 				"warm": "geometry.rooster_warm",
-				"cold": "geometry.rooster_cold"
+				"cold": "geometry.rooster_cold",
+				"baby": "geometry.chicken.baby"
 			},
 			"animations": {
-				"move": "animation.rooster.move",
-				"general": "animation.rooster.general",
+				"move": "animation.chicken.move",
+				"general": "animation.chicken.general",
 				"look_at_target": "animation.common.look_at_target",
-				"baby_transform": "animation.rooster.baby_transform"
+				"baby_transform": "animation.chicken.baby_transform"
 			},
 			"scripts": {
 				"animate": [
@@ -30,10 +35,11 @@
 					{
 						"move": "query.modified_move_speed"
 					},
-					"look_at_target",
-					{
-						"baby_transform": "query.is_baby"
-					}
+					"look_at_target"
+				],
+				"pre_animation": [
+					"v.index = query.variant;",
+					"v.is_cold = query.variant == 2;"
 				]
 			},
 			"render_controllers": [
